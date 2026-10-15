@@ -1,0 +1,14 @@
+titulo,tipo,anio,director,genero_1,genero_2,genero_3,idioma,puntuacion,vistas,duracion_min,temporadas,episodios,clasificacion,pais,presupuesto_usd,recaudacion_usd
+Inception,pelicula,2010,Christopher Nolan,Acción,Ciencia Ficción,Thriller,Inglés,8.8,4500000,148,,, PG-13,Estados Unidos,160000000,836800000
+Interstellar,pelicula,2014,Christopher Nolan,Ciencia Ficción,Drama,Aventura,Inglés,8.6,3900000,169,,,PG-13,Estados Unidos,165000000,701700000
+El Laberinto del Fauno,pelicula,2006,Guillermo del Toro,Drama,Fantasía,,Español,8.2,2800000,118,,,R,España,19000000,83200000
+Parasite,pelicula,2019,Bong Joon-ho,Drama,Thriller,Comedia,Coreano,8.5,5200000,132,,,R,Corea del Sur,11400000,258800000
+Avengers: Endgame,pelicula,2019,Anthony Russo,Acción,Ciencia Ficción,Aventura,Inglés,8.4,9800000,181,,,PG-13,Estados Unidos,356000000,2797800000
+Spider-Man: No Way Home,pelicula,2021,Jon Watts,Acción,Ciencia Ficción,Comedia,Inglés,8.2,8700000,148,,,PG-13,Estados Unidos,200000000,1901800000
+Dune: Parte 1,pelicula,2021,Denis Villeneuve,Ciencia Ficción,Acción,Drama,Inglés,8.0,4100000,155,,,PG-13,Estados Unidos,165000000,401800000
+Everything Everywhere All at Once,pelicula,2022,Daniel Kwan,Acción,Comedia,Ciencia Ficción,Inglés,7.9,3300000,139,,,R,Estados Unidos,14300000,69800000
+Breaking Bad,serie,2008,Vince Gilligan,Drama,Thriller,Crimen,Inglés,9.5,12000000,,5,62,TV-MA,Estados Unidos,,
+Stranger Things,serie,2016,The Duffer Brothers,Ciencia Ficción,Terror,Drama,Inglés,8.7,18000000,,4,34,TV-14,Estados Unidos,,
+Dark,serie,2017,Baran bo Odar,Ciencia Ficción,Drama,Thriller,Alemán,8.8,7500000,,3,26,TV-MA,Alemania,,
+The Last of Us,serie,2023,Craig Mazin,Drama,Acción,Terror,Inglés,8.8,14500000,,1,9,TV-MA,Estados Unidos,,
+Narcos,serie,2015,Chris Brancato,Drama,Crimen,Thriller,Español,8.8,11000000,,3,30,TV-MA,Colombia,,
