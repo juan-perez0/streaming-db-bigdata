@@ -1,44 +1,44 @@
-# Análisis de Big Data con Apache Hadoop y MapReduce
-### Plataforma de Streaming — Procesamiento Distribuido
+# Analisis de Big Data con Apache Hadoop y MapReduce
+### Plataforma de Streaming - Procesamiento Distribuido
 
 ---
 
-## 📋 Descripción del Proyecto
+## Descripcion del Proyecto
 
-Práctica de análisis de grandes volúmenes de datos utilizando el paradigma **MapReduce** sobre un dataset de contenido de streaming (películas y series). El proyecto implementa 5 análisis distribuidos en Java para Hadoop 3.x y una simulación local en Python, aplicando conceptos de Big Data para la toma de decisiones sobre el comportamiento del catálogo de una plataforma de streaming.
+Practica de analisis de grandes volumenes de datos utilizando el paradigma **MapReduce** sobre un dataset de contenido de streaming (peliculas y series). El proyecto implementa 5 analisis distribuidos en Java para Hadoop 3.x y una simulacion local en Python, aplicando conceptos de Big Data para la toma de decisiones sobre el comportamiento del catalogo de una plataforma de streaming.
 
-**Institución:** [Nombre de la Universidad]  
-**Materia:** Big Data — Análisis  
-**Autor:** Diego  
-**Año:** 2026
+**Institucion:** [Nombre de la Universidad]
+**Materia:** Big Data — Analisis
+**Autor:** Diego
+**Ano:** 2026
 
 ---
 
-## 🗂️ Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 TAREABIG/
 ├── datos/
 │   ├── peliculas_dataset.csv          Dataset original (13 registros)
 │   ├── peliculas_dataset.json         Dataset original en JSON
-│   └── streaming_ampliado.csv         Dataset ampliado (97 registros)
+│   └── streaming_ampliado.csv         Dataset ampliado (93 registros)
 ├── mapreduce/
 │   ├── 01_conteo_por_genero/
-│   │   └── ConteoGenero.java          Job 01: Conteo por género
+│   │   └── ConteoGenero.java          Job 01: Conteo por genero
 │   ├── 02_promedio_puntuacion/
-│   │   └── PromedioPuntuacion.java    Job 02: Promedio por país
+│   │   └── PromedioPuntuacion.java    Job 02: Promedio por pais
 │   ├── 03_analisis_ingresos/
 │   │   └── AnalisisIngresos.java      Job 03: Ingresos por director
 │   ├── 04_top_vistas/
-│   │   └── TopVistas.java             Job 04: Top 10 más vistos
+│   │   └── TopVistas.java             Job 04: Top 10 mas vistos
 │   └── 05_tendencias_anio/
-│       └── TendenciasAnio.java        Job 05: Tendencias por año
+│       └── TendenciasAnio.java        Job 05: Tendencias por anio
 ├── hadoop/
-│   ├── configuracion_hadoop.md        Guía de instalación y config
-│   ├── comandos_hdfs.sh               Comandos de gestión HDFS
-│   └── ejecucion_jobs.sh              Compilación y ejecución Jobs
+│   ├── configuracion_hadoop.md        Guia de instalacion y config
+│   ├── comandos_hdfs.sh               Comandos de gestion HDFS
+│   └── ejecucion_jobs.sh              Compilacion y ejecucion Jobs
 ├── python/
-│   ├── mapreduce_simulado.py          Simulación local (sin Hadoop)
+│   ├── mapreduce_simulado.py          Simulacion local (sin Hadoop)
 │   ├── analisis_resultados.py         Visualizaciones con matplotlib
 │   └── requirements.txt
 └── resultados/
@@ -46,87 +46,95 @@ TAREABIG/
     ├── resultado_promedio_puntuacion.txt
     ├── resultado_ingresos.txt
     ├── resultado_top_vistas.txt
-    └── resultado_tendencias.txt
+    ├── resultado_tendencias.txt
+    └── dashboard_mapreduce.html       Dashboard interactivo (abrir en navegador)
 ```
 
 ---
 
-## 🧩 Jobs MapReduce Implementados
+## Jobs MapReduce Implementados
 
-| # | Job | Análisis | Input | Output |
-|---|-----|----------|-------|--------|
-| 01 | `ConteoGenero` | Conteo de títulos por género | CSV | (género, conteo) |
-| 02 | `PromedioPuntuacion` | Puntuación promedio por país | CSV | (país, stats) |
-| 03 | `AnalisisIngresos` | Ingresos y ROI por director | CSV | (director, financiero) |
-| 04 | `TopVistas` | Top 10 contenido más visto | CSV | (posición, vistas) |
-| 05 | `TendenciasAnio` | Producción y métricas por año | CSV | (año, stats) |
+| # | Clase Java | Analisis | Clave Map | Valor Map | Salida |
+|---|-----------|----------|-----------|-----------|--------|
+| 01 | `ConteoGenero` | Conteo por genero | genero | 1 | (genero, conteo) |
+| 02 | `PromedioPuntuacion` | Promedio por pais | pais | puntuacion | (pais, promedio+stats) |
+| 03 | `AnalisisIngresos` | Ingresos por director | director | presup\|recaud | (director, financiero) |
+| 04 | `TopVistas` | Top 10 mas vistos | titulo[tipo] | vistas | (posicion, vistas) |
+| 05 | `TendenciasAnio` | Produccion por anio | anio | tipo\|punt\|vistas | (anio, stats) |
 
 ---
 
-## ⚡ Ejecución Rápida (Simulación Python — Sin Hadoop)
+## Ejecucion Rapida — Simulacion Python (Sin Hadoop requerido)
 
 ```bash
 # 1. Instalar dependencias
 pip install -r python/requirements.txt
 
-# 2. Ejecutar simulación MapReduce
+# 2. Ejecutar simulacion MapReduce local
 python python/mapreduce_simulado.py
 
-# 3. Generar gráficos de análisis
+# 3. Generar graficos de analisis
 python python/analisis_resultados.py
 ```
 
-Los resultados se guardan automáticamente en la carpeta `resultados/`.
+Los resultados se guardan en la carpeta `resultados/`.
+El dashboard interactivo `resultados/dashboard_mapreduce.html` se abre directamente en el navegador.
 
 ---
 
-## 🐘 Ejecución con Hadoop Real
+## Ejecucion con Hadoop Real
 
-### Requisitos
+### Requisitos previos
 - Apache Hadoop 3.3.6
 - Java JDK 11
-- Ubuntu/WSL con SSH configurado
+- Ubuntu 22.04 / WSL2 con SSH sin contrasena configurado
 
-### Pasos
+### Pasos de ejecucion
 
 ```bash
-# 1. Configurar Hadoop (ver hadoop/configuracion_hadoop.md)
+# 1. Iniciar servicios Hadoop
 start-dfs.sh && start-yarn.sh
 
-# 2. Cargar datos en HDFS
+# 2. Verificar servicios activos
+jps
+# NameNode, DataNode, ResourceManager, NodeManager
+
+# 3. Cargar datos en HDFS
 bash hadoop/comandos_hdfs.sh
 
-# 3. Compilar y ejecutar todos los Jobs
+# 4. Compilar y ejecutar los 5 Jobs
 bash hadoop/ejecucion_jobs.sh
 
-# 4. Ver resultados
+# 5. Ver resultado del Job 01
 hdfs dfs -cat /user/estudiante/streaming/resultados/job01_generos/part-r-00000
 ```
 
----
-
-## 📊 Hallazgos Principales
-
-### Análisis 1 — Géneros más populares
-> **Drama** es el género más representado con **59 títulos** (19.6%), seguido de **Acción** (45) y **Thriller** (38). La combinación Drama+Thriller cubre el 32.2% del catálogo.
-
-### Análisis 2 — Calidad por país
-> **Reino Unido** lidera en calidad con promedio **8.73** en 10 títulos. **India** destaca con 8.37 en 6 producciones. **Estados Unidos** domina en volumen (51 títulos, prom. 8.37).
-
-### Análisis 3 — Rentabilidad por director
-> **Christopher Nolan** acumula **$3.61B USD** en recaudación con 5 películas. **Makoto Shinkai** logra el mejor ROI: **51.13x** (*Your Name*: $7M → $357M).
-
-### Análisis 4 — Contenido más visto
-> Las **10 posiciones del top son series**. *Squid Game* lidera con **111 millones** de visualizaciones. Las películas más vistas no alcanzan el Top 10.
-
-### Análisis 5 — Tendencias históricas
-> **2019** fue el año más productivo (10 títulos). Los clásicos de **1994** (Shawshank, Forrest Gump, Pulp Fiction) mantienen el promedio de puntuación más alto (8.97).
+Ver `hadoop/configuracion_hadoop.md` para la configuracion completa de core-site.xml, hdfs-site.xml, mapred-site.xml y yarn-site.xml.
 
 ---
 
-## 🗃️ Dataset
+## Hallazgos Principales del Analisis
 
-El dataset `streaming_ampliado.csv` contiene **97 registros** de películas y series de distintos países con los siguientes campos:
+### Analisis 1 — Generos mas populares
+> **Drama** es el genero mas representado con **59 titulos**, seguido de **Accion** (45) y **Thriller** (38). La combinacion Drama+Thriller cubre el 32.2% del catalogo.
+
+### Analisis 2 — Calidad por pais
+> **Reino Unido** lidera calidad con promedio **8.73** en 10 titulos (Chernobyl 9.4, Sherlock 9.1). **Estados Unidos** domina en volumen (45 titulos, prom. 8.37).
+
+### Analisis 3 — Rentabilidad por director
+> **Christopher Nolan** acumula **3.61 billones USD** con 5 peliculas. **Makoto Shinkai** logra el mejor ROI: **51x** (Your Name: 7M presupuesto — 357M recaudacion).
+
+### Analisis 4 — Contenido mas visto
+> Las **10 posiciones del Top son series**. Squid Game lidera con **111 millones** de visualizaciones. Ninguna pelicula alcanza el Top 10.
+
+### Analisis 5 — Tendencias historicas
+> **2019** fue el ano mas productivo (10 titulos). Las series dominan desde 2015. Los clasicos de **1994** mantienen la puntuacion promedio mas alta (8.97).
+
+---
+
+## Dataset
+
+El dataset `streaming_ampliado.csv` contiene **93 registros** (45 peliculas + 48 series):
 
 ```
 titulo, tipo, anio, director, genero_1, genero_2, genero_3,
@@ -134,32 +142,34 @@ idioma, puntuacion, vistas, duracion_min, temporadas,
 episodios, clasificacion, pais, presupuesto_usd, recaudacion_usd
 ```
 
-**Países representados:** Estados Unidos, Reino Unido, Corea del Sur, España, Japón, Alemania, Francia, India, Colombia, México, Brasil, Italia, Australia, Israel, Austria
+**Paises:** Estados Unidos, Reino Unido, Corea del Sur, Espana, Japon,
+Alemania, Francia, India, Colombia, Mexico, Brasil, Italia, Australia, Israel (14 paises)
 
 ---
 
-## 🔧 Paradigma MapReduce
+## Paradigma MapReduce — Flujo de Procesamiento
 
 ```
-Input CSV
-    │
-    ▼
- [MAPPER]  ──────► Emite pares (clave, valor)
-    │                Ej: ("Drama", 1), ("Drama", 1)
-    │
- [SHUFFLE]  ─────► Agrupa por clave
-    │                Ej: "Drama" → [1, 1, 1, ...]
-    │
- [REDUCER]  ─────► Procesa cada grupo
-    │                Ej: "Drama" → 59
-    ▼
- Output HDFS
+Input CSV (HDFS)
+      |
+      v
+  [MAPPER]  ----> Emite pares (clave, valor)
+      |             Ej: ("Drama", 1), ("Accion", 1)
+      |
+  [SHUFFLE] ----> Agrupa y ordena por clave
+      |             Ej: "Drama" -> [1, 1, 1, ...]
+      |
+  [REDUCER] ----> Procesa cada grupo
+      |             Ej: "Drama" -> 59
+      v
+ Output HDFS (part-r-00000)
 ```
 
 ---
 
-## 📚 Referencias
+## Referencias
 
 - Apache Hadoop Documentation: https://hadoop.apache.org/docs/
 - MapReduce Tutorial: https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
-- Dean, J. & Ghemawat, S. (2004). *MapReduce: Simplified Data Processing on Large Clusters*. OSDI'04.
+- Dean, J. & Ghemawat, S. (2004). MapReduce: Simplified Data Processing on Large Clusters. OSDI'04.
+- White, T. (2015). Hadoop: The Definitive Guide (4th ed.). O'Reilly Media.

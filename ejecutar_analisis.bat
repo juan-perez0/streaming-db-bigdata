@@ -81,3 +81,4 @@ echo Abrir graficos con el explorador de archivos:
 start "" "resultados\"
 echo.
 pause
+

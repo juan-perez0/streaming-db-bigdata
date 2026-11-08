@@ -20,11 +20,11 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
  * producido por cada pais.
  *
  * Columnas CSV:
- *   0:titulo, 1:tipo, 2:anio, 3:director,
- *   4:genero_1, 5:genero_2, 6:genero_3,
- *   7:idioma, 8:puntuacion, 9:vistas,
- *   10:duracion_min, 11:temporadas, 12:episodios,
- *   13:clasificacion, 14:pais, ...
+ * 0:titulo, 1:tipo, 2:anio, 3:director,
+ * 4:genero_1, 5:genero_2, 6:genero_3,
+ * 7:idioma, 8:puntuacion, 9:vistas,
+ * 10:duracion_min, 11:temporadas, 12:episodios,
+ * 13:clasificacion, 14:pais, ...
  * ============================================================
  */
 public class PromedioPuntuacion {
@@ -35,7 +35,7 @@ public class PromedioPuntuacion {
     public static class PaisMapper
             extends Mapper<LongWritable, Text, Text, Text> {
 
-        private final Text paisKey  = new Text();
+        private final Text paisKey = new Text();
         private final Text puntoVal = new Text();
 
         @Override
@@ -45,15 +45,18 @@ public class PromedioPuntuacion {
             String linea = valor.toString().trim();
 
             // Omitir cabecera
-            if (linea.startsWith("titulo") || linea.isEmpty()) return;
+            if (linea.startsWith("titulo") || linea.isEmpty())
+                return;
 
             String[] campos = linea.split(",", -1);
-            if (campos.length < 15) return;
+            if (campos.length < 15)
+                return;
 
-            String pais       = campos[14].trim();
+            String pais = campos[14].trim();
             String puntuacion = campos[8].trim();
 
-            if (pais.isEmpty() || puntuacion.isEmpty()) return;
+            if (pais.isEmpty() || puntuacion.isEmpty())
+                return;
 
             try {
                 Double.parseDouble(puntuacion); // Validar que es numero
@@ -76,18 +79,20 @@ public class PromedioPuntuacion {
         public void reduce(Text clave, Iterable<Text> valores, Context contexto)
                 throws IOException, InterruptedException {
 
-            double suma  = 0.0;
-            int    count = 0;
-            double min   = Double.MAX_VALUE;
-            double max   = -Double.MAX_VALUE;
+            double suma = 0.0;
+            int count = 0;
+            double min = Double.MAX_VALUE;
+            double max = -Double.MAX_VALUE;
 
             for (Text val : valores) {
                 try {
                     double p = Double.parseDouble(val.toString());
                     suma += p;
                     count++;
-                    if (p < min) min = p;
-                    if (p > max) max = p;
+                    if (p < min)
+                        min = p;
+                    if (p > max)
+                        max = p;
                 } catch (NumberFormatException e) {
                     // Ignorar
                 }
@@ -96,9 +101,8 @@ public class PromedioPuntuacion {
             if (count > 0) {
                 double promedio = suma / count;
                 String resultado = String.format(
-                    "promedio=%.2f\ttitulos=%d\tmin=%.1f\tmax=%.1f",
-                    promedio, count, min, max
-                );
+                        "promedio=%.2f\ttitulos=%d\tmin=%.1f\tmax=%.1f",
+                        promedio, count, min, max);
                 contexto.write(clave, new Text(resultado));
             }
         }

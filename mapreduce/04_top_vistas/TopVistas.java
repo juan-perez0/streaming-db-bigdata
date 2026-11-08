@@ -23,8 +23,8 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
  * Usa un TreeMap en el Reducer para ordenar y limitar a Top 10.
  *
  * Columnas CSV:
- *   0:titulo, 1:tipo, 2:anio, 3:director,
- *   4:genero_1, ... 7:idioma, 8:puntuacion, 9:vistas, ...
+ * 0:titulo, 1:tipo, 2:anio, 3:director,
+ * 4:genero_1, ... 7:idioma, 8:puntuacion, 9:vistas, ...
  * ============================================================
  */
 public class TopVistas {
@@ -35,7 +35,7 @@ public class TopVistas {
     public static class VistaMapper
             extends Mapper<LongWritable, Text, Text, LongWritable> {
 
-        private final Text        tituloKey  = new Text();
+        private final Text tituloKey = new Text();
         private final LongWritable vistasVal = new LongWritable();
 
         @Override
@@ -44,16 +44,19 @@ public class TopVistas {
 
             String linea = valor.toString().trim();
 
-            if (linea.startsWith("titulo") || linea.isEmpty()) return;
+            if (linea.startsWith("titulo") || linea.isEmpty())
+                return;
 
             String[] campos = linea.split(",", -1);
-            if (campos.length < 10) return;
+            if (campos.length < 10)
+                return;
 
-            String titulo  = campos[0].trim();
-            String tipo    = campos[1].trim();
+            String titulo = campos[0].trim();
+            String tipo = campos[1].trim();
             String vistasS = campos[9].trim();
 
-            if (titulo.isEmpty() || vistasS.isEmpty()) return;
+            if (titulo.isEmpty() || vistasS.isEmpty())
+                return;
 
             try {
                 long vistas = Long.parseLong(vistasS);
@@ -101,9 +104,8 @@ public class TopVistas {
             int posicion = topMap.size();
             for (Map.Entry<Long, String> entrada : topMap.entrySet()) {
                 contexto.write(
-                    new Text("#" + posicion + " " + entrada.getValue()),
-                    new LongWritable(entrada.getKey())
-                );
+                        new Text("#" + posicion + " " + entrada.getValue()),
+                        new LongWritable(entrada.getKey()));
                 posicion--;
             }
         }
