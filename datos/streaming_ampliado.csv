@@ -1,0 +1,94 @@
+titulo,tipo,anio,director,genero_1,genero_2,genero_3,idioma,puntuacion,vistas,duracion_min,temporadas,episodios,clasificacion,pais,presupuesto_usd,recaudacion_usd
+Inception,pelicula,2010,Christopher Nolan,Acción,Ciencia Ficción,Thriller,Inglés,8.8,4500000,148,,,PG-13,Estados Unidos,160000000,836800000
+Interstellar,pelicula,2014,Christopher Nolan,Ciencia Ficción,Drama,Aventura,Inglés,8.6,3900000,169,,,PG-13,Estados Unidos,165000000,701700000
+El Laberinto del Fauno,pelicula,2006,Guillermo del Toro,Drama,Fantasía,,Español,8.2,2800000,118,,,R,España,19000000,83200000
+Parasite,pelicula,2019,Bong Joon-ho,Drama,Thriller,Comedia,Coreano,8.5,5200000,132,,,R,Corea del Sur,11400000,258800000
+Avengers: Endgame,pelicula,2019,Anthony Russo,Acción,Ciencia Ficción,Aventura,Inglés,8.4,9800000,181,,,PG-13,Estados Unidos,356000000,2797800000
+Spider-Man: No Way Home,pelicula,2021,Jon Watts,Acción,Ciencia Ficción,Comedia,Inglés,8.2,8700000,148,,,PG-13,Estados Unidos,200000000,1901800000
+Dune: Parte 1,pelicula,2021,Denis Villeneuve,Ciencia Ficción,Acción,Drama,Inglés,8.0,4100000,155,,,PG-13,Estados Unidos,165000000,401800000
+Everything Everywhere All at Once,pelicula,2022,Daniel Kwan,Acción,Comedia,Ciencia Ficción,Inglés,7.9,3300000,139,,,R,Estados Unidos,14300000,69800000
+Breaking Bad,serie,2008,Vince Gilligan,Drama,Thriller,Crimen,Inglés,9.5,12000000,,5,62,TV-MA,Estados Unidos,,
+Stranger Things,serie,2016,The Duffer Brothers,Ciencia Ficción,Terror,Drama,Inglés,8.7,18000000,,4,34,TV-14,Estados Unidos,,
+Dark,serie,2017,Baran bo Odar,Ciencia Ficción,Drama,Thriller,Alemán,8.8,7500000,,3,26,TV-MA,Alemania,,
+The Last of Us,serie,2023,Craig Mazin,Drama,Acción,Terror,Inglés,8.8,14500000,,1,9,TV-MA,Estados Unidos,,
+Narcos,serie,2015,Chris Brancato,Drama,Crimen,Thriller,Español,8.8,11000000,,3,30,TV-MA,Colombia,,
+The Dark Knight,pelicula,2008,Christopher Nolan,Acción,Crimen,Drama,Inglés,9.0,8200000,152,,,PG-13,Estados Unidos,185000000,1004900000
+The Shawshank Redemption,pelicula,1994,Frank Darabont,Drama,Crimen,,Inglés,9.3,6700000,142,,,R,Estados Unidos,25000000,16000000
+Forrest Gump,pelicula,1994,Robert Zemeckis,Drama,Comedia,Romance,Inglés,8.8,7100000,142,,,PG-13,Estados Unidos,55000000,678200000
+The Godfather,pelicula,1972,Francis Ford Coppola,Drama,Crimen,,Inglés,9.2,5900000,175,,,R,Estados Unidos,6000000,245100000
+Pulp Fiction,pelicula,1994,Quentin Tarantino,Crimen,Drama,Thriller,Inglés,8.9,6400000,154,,,R,Estados Unidos,8000000,214200000
+The Matrix,pelicula,1999,The Wachowskis,Acción,Ciencia Ficción,,Inglés,8.7,7800000,136,,,R,Estados Unidos,63000000,467200000
+Schindler's List,pelicula,1993,Steven Spielberg,Drama,Historia,Crimen,Inglés,8.9,4200000,195,,,R,Estados Unidos,22000000,96900000
+Spirited Away,pelicula,2001,Hayao Miyazaki,Animación,Fantasía,Aventura,Japonés,8.6,6300000,125,,,PG,Japón,19000000,395800000
+Your Name,pelicula,2016,Makoto Shinkai,Animación,Romance,Drama,Japonés,8.4,5800000,106,,,PG,Japón,7000000,357900000
+Oldboy,pelicula,2003,Park Chan-wook,Acción,Drama,Thriller,Coreano,8.4,4100000,120,,,R,Corea del Sur,3000000,15000000
+Train to Busan,pelicula,2016,Yeon Sang-ho,Terror,Acción,Drama,Coreano,7.6,6200000,118,,,NR,Corea del Sur,8700000,98500000
+Roma,pelicula,2018,Alfonso Cuarón,Drama,,,Español,7.7,3100000,135,,,R,México,15000000,4400000
+Amores Perros,pelicula,2000,Alejandro G. Iñárritu,Drama,Crimen,Thriller,Español,8.1,2600000,154,,,R,México,2000000,20900000
+City of God,pelicula,2002,Fernando Meirelles,Crimen,Drama,Thriller,Portugués,8.6,5100000,130,,,R,Brasil,3300000,30600000
+Elite,serie,2018,Ramón Salanova,Crimen,Drama,Thriller,Español,7.4,22000000,,7,56,TV-MA,España,,
+La Casa de Papel,serie,2017,Álex Pina,Acción,Crimen,Thriller,Español,8.2,54000000,,5,41,TV-MA,España,,
+Squid Game,serie,2021,Hwang Dong-hyuk,Drama,Acción,Thriller,Coreano,8.0,111000000,,1,9,TV-MA,Corea del Sur,,
+Alice in Borderland,serie,2020,Shinsuke Sato,Acción,Ciencia Ficción,Thriller,Japonés,7.7,32000000,,2,16,TV-MA,Japón,,
+Kingdom,serie,2019,Kim Seong-hun,Terror,Acción,Drama,Coreano,8.4,16000000,,2,12,TV-MA,Corea del Sur,,
+Chernobyl,serie,2019,Johan Renck,Drama,Historia,Thriller,Inglés,9.4,19000000,,1,5,TV-MA,Reino Unido,,
+The Crown,serie,2016,Peter Morgan,Drama,Historia,Biográfico,Inglés,8.6,21000000,,6,60,TV-MA,Reino Unido,,
+Black Mirror,serie,2011,Charlie Brooker,Ciencia Ficción,Drama,Thriller,Inglés,8.8,24000000,,6,27,TV-MA,Reino Unido,,
+Sherlock,serie,2010,Mark Gatiss,Crimen,Drama,Misterio,Inglés,9.1,27000000,,4,13,TV-14,Reino Unido,,
+Peaky Blinders,serie,2013,Steven Knight,Drama,Crimen,Historia,Inglés,8.8,16000000,,6,36,TV-MA,Reino Unido,,
+Fleabag,serie,2016,Phoebe Waller-Bridge,Comedia,Drama,,Inglés,8.7,12000000,,2,12,TV-MA,Reino Unido,,
+The Office US,serie,2005,Greg Daniels,Comedia,,,Inglés,8.9,34000000,,9,201,TV-14,Estados Unidos,,
+Friends,serie,1994,David Crane,Comedia,Romance,,Inglés,8.9,52000000,,10,236,TV-PG,Estados Unidos,,
+Game of Thrones,serie,2011,David Benioff,Drama,Fantasía,Acción,Inglés,9.2,89000000,,8,73,TV-MA,Estados Unidos,,
+The Wire,serie,2002,David Simon,Drama,Crimen,,Inglés,9.3,8400000,,5,60,TV-MA,Estados Unidos,,
+The Mandalorian,serie,2019,Jon Favreau,Acción,Aventura,Ciencia Ficción,Inglés,8.7,42000000,,3,24,TV-PG,Estados Unidos,,
+Ozark,serie,2017,Bill Dubuque,Drama,Crimen,Thriller,Inglés,8.4,29000000,,4,44,TV-MA,Estados Unidos,,
+Succession,serie,2018,Jesse Armstrong,Drama,Comedia,,Inglés,8.9,22000000,,4,39,TV-MA,Estados Unidos,,
+Better Call Saul,serie,2015,Vince Gilligan,Drama,Crimen,Thriller,Inglés,8.9,14000000,,6,63,TV-MA,Estados Unidos,,
+Westworld,serie,2016,Jonathan Nolan,Ciencia Ficción,Drama,Thriller,Inglés,8.5,21000000,,4,36,TV-MA,Estados Unidos,,
+Lucifer,serie,2016,Tom Kapinos,Drama,Comedia,Fantasía,Inglés,8.1,47000000,,6,93,TV-14,Estados Unidos,,
+Gravity,pelicula,2013,Alfonso Cuarón,Ciencia Ficción,Drama,,Inglés,7.7,5500000,91,,,PG-13,Estados Unidos,100000000,723200000
+Mad Max: Fury Road,pelicula,2015,George Miller,Acción,Aventura,Ciencia Ficción,Inglés,8.1,5900000,120,,,R,Australia,185000000,375400000
+Get Out,pelicula,2017,Jordan Peele,Terror,Thriller,Misterio,Inglés,7.7,4800000,104,,,R,Estados Unidos,4500000,255400000
+Knives Out,pelicula,2019,Rian Johnson,Misterio,Comedia,Drama,Inglés,7.9,4200000,130,,,PG-13,Estados Unidos,40000000,311400000
+1917,pelicula,2019,Sam Mendes,Drama,Historia,Acción,Inglés,8.3,3900000,119,,,R,Reino Unido,95000000,384900000
+Amélie,pelicula,2001,Jean-Pierre Jeunet,Comedia,Romance,Drama,Francés,8.3,4700000,122,,,R,Francia,10000000,174200000
+The Intouchables,pelicula,2011,Olivier Nakache,Drama,Comedia,Romance,Francés,8.5,6800000,112,,,R,Francia,10900000,426600000
+The Handmaiden,pelicula,2016,Park Chan-wook,Drama,Thriller,Romance,Coreano,8.1,3200000,145,,,NR,Corea del Sur,8800000,37700000
+Rashomon,pelicula,1950,Akira Kurosawa,Drama,Crimen,,Japonés,8.2,2900000,88,,,NR,Japón,,
+Seven Samurai,pelicula,1954,Akira Kurosawa,Acción,Drama,Aventura,Japonés,8.6,3800000,207,,,NR,Japón,,
+Akira,pelicula,1988,Katsuhiro Otomo,Animación,Ciencia Ficción,Acción,Japonés,8.0,4400000,124,,,R,Japón,9000000,80000000
+3 Idiots,pelicula,2009,Rajkumar Hirani,Comedia,Drama,Romance,Hindi,8.4,8900000,170,,,PG,India,4200000,117000000
+Dangal,pelicula,2016,Nitesh Tiwari,Drama,Deporte,,Hindi,8.3,9200000,161,,,PG,India,11400000,330600000
+Sacred Games,serie,2018,Vikramaditya Motwane,Crimen,Drama,Thriller,Hindi,8.6,21000000,,2,16,TV-MA,India,,
+Mirzapur,serie,2018,Gurmmeet Singh,Crimen,Drama,Thriller,Hindi,8.5,28000000,,2,19,TV-MA,India,,
+La Casa de Papel: Korea,serie,2022,Kim Hong-sun,Acción,Crimen,Thriller,Coreano,7.2,18000000,,1,12,TV-MA,Corea del Sur,,
+Lupin,serie,2021,George Kay,Acción,Misterio,Crimen,Francés,7.5,70000000,,3,17,TV-MA,Francia,,
+Babylon Berlin,serie,2017,Tom Tykwer,Drama,Crimen,Historia,Alemán,8.4,12000000,,4,40,TV-MA,Alemania,,
+1899,serie,2022,Baran bo Odar,Misterio,Ciencia Ficción,Drama,Alemán,7.2,79000000,,1,8,TV-MA,Alemania,,
+Gomorrah,serie,2014,Stefano Sollima,Crimen,Drama,,Italiano,8.6,11000000,,5,50,TV-MA,Italia,,
+Who Killed Sara?,serie,2021,José M. Ruvalcaba,Misterio,Crimen,Drama,Español,7.5,55000000,,3,24,TV-MA,México,,
+The Witcher,serie,2019,Lauren Schmidt,Fantasía,Acción,Aventura,Inglés,8.2,76000000,,3,24,TV-MA,Estados Unidos,,
+Bridgerton,serie,2020,Chris Van Dusen,Drama,Romance,Historia,Inglés,7.3,82000000,,3,24,TV-14,Estados Unidos,,
+Sex Education,serie,2019,Laurie Nunn,Comedia,Drama,Romance,Inglés,8.3,45000000,,4,32,TV-MA,Reino Unido,,
+Klaus,pelicula,2019,Sergio Pablos,Animación,Comedia,Fantasía,Inglés,8.2,32000000,97,,,PG,España,40000000,
+The Platform,pelicula,2019,Galder Gaztelu-Urrutia,Terror,Ciencia Ficción,Drama,Español,7.0,34000000,94,,,NR,España,2000000,
+Soul,pelicula,2020,Pete Docter,Animación,Comedia,Drama,Inglés,8.1,28000000,100,,,PG,Estados Unidos,150000000,120000000
+Tenet,pelicula,2020,Christopher Nolan,Acción,Ciencia Ficción,Thriller,Inglés,7.3,8600000,150,,,PG-13,Estados Unidos,205000000,363700000
+Parasite (Versión Extendida),pelicula,2019,Bong Joon-ho,Drama,Thriller,Crimen,Coreano,8.5,4800000,136,,,R,Corea del Sur,11400000,258800000
+Money Heist: Part 5,serie,2021,Álex Pina,Acción,Crimen,Thriller,Español,7.9,34000000,,1,10,TV-MA,España,,
+Mindhunter,serie,2017,David Fincher,Drama,Crimen,Thriller,Inglés,8.6,17000000,,2,19,TV-MA,Estados Unidos,,
+Fauda,serie,2015,Lior Raz,Acción,Drama,Thriller,Hebreo,8.2,14000000,,4,48,TV-MA,Israel,,
+Call My Agent,serie,2015,Fanny Herrero,Comedia,Drama,,Francés,8.2,16000000,,4,24,TV-MA,Francia,,
+Delhi Crime,serie,2019,Richie Mehta,Crimen,Drama,,Hindi,8.5,16000000,,2,14,TV-MA,India,,
+Panchayat,serie,2020,Deepak Mishra,Comedia,Drama,,Hindi,8.8,19000000,,3,24,TV-14,India,,
+Vis a Vis,serie,2015,Iván Escobar,Drama,Thriller,Crimen,Español,8.1,16000000,,5,45,TV-MA,España,,
+Suburra,serie,2017,Andrea Molaioli,Crimen,Drama,Thriller,Italiano,7.5,7200000,,3,24,TV-MA,Italia,,
+The Umbrella Academy,serie,2019,Steve Blackman,Acción,Ciencia Ficción,Drama,Inglés,7.9,45000000,,3,30,TV-14,Estados Unidos,,
+Never Have I Ever,serie,2020,Mindy Kaling,Comedia,Drama,Romance,Inglés,7.9,40000000,,4,40,TV-14,Estados Unidos,,
+Shadow and Bone,serie,2021,Eric Heisserer,Fantasía,Acción,Aventura,Inglés,7.6,55000000,,2,16,TV-14,Estados Unidos,,
+Portrait of a Lady on Fire,pelicula,2019,Céline Sciamma,Drama,Romance,Historia,Francés,8.1,2200000,122,,,NR,Francia,7900000,10100000
+Get Out 2,pelicula,2022,Jordan Peele,Terror,Thriller,,Inglés,7.5,3900000,110,,,R,Estados Unidos,15000000,220000000
+The Trial of Chicago 7,pelicula,2020,Aaron Sorkin,Drama,Historia,,Inglés,7.8,15000000,129,,,R,Estados Unidos,35000000,
+Mank,pelicula,2020,David Fincher,Drama,Historia,Biográfico,Inglés,6.9,9000000,131,,,R,Estados Unidos,38000000,
+1917 Extendida,pelicula,2020,Sam Mendes,Drama,Historia,Acción,Inglés,8.3,2800000,119,,,R,Reino Unido,95000000,384900000

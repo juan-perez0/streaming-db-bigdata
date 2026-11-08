@@ -1,2 +1,29 @@
 # Ignorar carpeta de capturas de pantalla (solo uso local)
 capturas/
+
+# Archivos compilados Java
+*.class
+*.jar
+jars/
+
+# Python
+*.pyc
+__pycache__/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Gráficos generados (se re-generan con el script)
+resultados/*.png
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+*.suo
+*.user
+
+# Hadoop temporal
+tmp/
+logs/

@@ -1,0 +1,50 @@
+﻿AÑO	TITULOS	PELICULAS  SERIES	PUNT_PROM	VISTAS_TOTAL
+----------------------------------------------------------------------
+1950	1	1	   0		8.20		2,900,000
+1954	1	1	   0		8.60		3,800,000
+1972	1	1	   0		9.20		5,900,000
+1988	1	1	   0		8.00		4,400,000
+1993	1	1	   0		8.90		4,200,000
+1994	3	3	   0		8.97		20,200,000
+1999	2	1	   1		9.00		63,800,000
+2000	1	1	   0		8.10		2,600,000
+2001	3	3	   0		8.40		14,800,000
+2002	2	1	   1		8.95		13,500,000
+2003	1	1	   0		8.40		4,100,000
+2005	1	0	   1		8.90		34,000,000
+2006	2	1	   1		8.00		14,800,000
+2008	3	1	   2		9.10		26,200,000
+2009	2	2	   0		8.35		11,000,000
+2010	3	1	   2		8.73		36,000,000
+2011	3	0	   3		9.17		140,200,000
+2013	2	1	   1		8.20		20,500,000
+2014	2	1	   1		8.60		24,900,000
+2015	3	0	   3		8.50		38,000,000
+2016	7	3	   4		8.56		98,500,000
+2017	5	1	   4		8.44		71,500,000
+2018	5	1	   4		8.00		99,700,000
+2019	10	6	   4		7.98		364,400,000
+2020	7	3	   4		7.74		272,000,000
+2021	6	2	   4		8.03		252,600,000
+2022	4	2	   2		7.98		186,800,000
+2023	1	0	   1		8.80		14,500,000
+
+================================================
+RESUMEN - JOB 05: Tendencias de Producción por Año
+================================================
+Rango de años cubierto: 1950 - 2023
+Año más productivo: 2019 (10 títulos: 6 películas + 4 series)
+Mejor puntuación promedio: 1994 (8.97) y 2011 (9.17)
+Año con más vistas acumuladas: 2019 (364.4M visualizaciones)
+Tendencia clara: Incremento sostenido de producción 2016-2021
+
+INTERPRETACIÓN:
+El período 2016-2022 muestra el boom del streaming con producción
+significativamente mayor. El año 2019 es el más prolífico. Las
+series dominan progresivamente desde 2015. Las películas clásicas
+(1994: Shawshank, Forrest Gump, Pulp Fiction) mantienen las
+puntuaciones promedio más altas, sugiriendo que la calidad percibida
+histórica supera al contenido moderno en puntuación promedio.
+
+Hadoop MapReduce Job completado en: 53 segundos
+Mapper tasks: 2 | Reducer tasks: 1

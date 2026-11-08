@@ -1,0 +1,34 @@
+﻿DIRECTOR			PELICULAS	RECAUD_TOTAL		ROI
+------------------------------------------------------------------------
+Christopher Nolan		5		3610800000		5.78x
+Anthony Russo			1		2797800000		7.86x
+Jon Watts			1		1901800000		9.51x
+Olivier Nakache			1		 426600000		39.14x
+Robert Zemeckis			1		 678200000		12.33x
+Alfonso Cuarón			2		 727600000		6.21x
+Sam Mendes			2		 769800000		4.06x
+Denis Villeneuve		1		 401800000		2.44x
+Makoto Shinkai			1		 357900000		51.13x
+Bong Joon-ho			3		 776400000		22.72x
+Jordan Peele			2		 475400000		22.59x
+Francis Ford Coppola		1		 245100000		40.85x
+Rajkumar Hirani			1		 117000000		27.86x
+Nitesh Tiwari			1		 330600000		29.00x
+Pete Docter			1		 120000000		0.80x
+
+================================================
+RESUMEN - JOB 03: Análisis de Ingresos por Director
+================================================
+Directores con datos financieros: 15
+Mayor recaudación total: Christopher Nolan (3.61B USD, 5 películas)
+Mejor ROI: Makoto Shinkai (51.13x) - Your Name (7M presupuesto, 358M recaud)
+Mayor recaudación película única: Anthony Russo - Avengers: Endgame (2.8B)
+
+INTERPRETACIÓN:
+Christopher Nolan es el director más rentable con 5 películas y
+3.61 billones USD. El mejor ROI pertenece a Makoto Shinkai (51x)
+con un presupuesto de 7M que generó 357M. Bong Joon-ho logra 22.72x
+confirmando que el cine de autor internacional supera al blockbuster
+en eficiencia financiera.
+
+Hadoop MapReduce Job completado en: 44 segundos

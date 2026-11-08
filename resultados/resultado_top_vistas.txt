@@ -1,0 +1,29 @@
+﻿POSICIÓN	TÍTULO					VISTAS
+----------------------------------------------------------------
+#1		Squid Game [serie]			111,000,000
+#2		Game of Thrones [serie]			89,000,000
+#3		Bridgerton [serie]			82,000,000
+#4		1899 [serie]				79,000,000
+#5		The Witcher [serie]			76,000,000
+#6		Lupin [serie]				70,000,000
+#7		Emily in Paris [serie]			58,000,000
+#8		Who Killed Sara? [serie]		55,000,000
+#9		Shadow and Bone [serie]			55,000,000
+#10		La Casa de Papel [serie]		54,000,000
+
+================================================
+RESUMEN - JOB 04: Top 10 Contenido Más Visto
+================================================
+Observación clave: Las 10 posiciones son ocupadas por SERIES
+Película más vista del dataset: Avengers: Endgame (9,800,000 vistas)
+Contenido más visto: Squid Game con 111 millones de visualizaciones
+
+INTERPRETACIÓN:
+El Top 10 está dominado COMPLETAMENTE por series. Squid Game lidera
+con 111 millones de vistas. Esto confirma que el modelo de consumo
+en streaming favorece el contenido episódico. La presencia de
+contenidos internacionales (Squid Game-Corea, La Casa de Papel-España,
+Lupin-Francia) demuestra la globalización del consumo de streaming.
+
+Hadoop MapReduce Job completado en: 39 segundos
+Mapper tasks: 2 | Reducer tasks: 1 (forzado para Top N global)

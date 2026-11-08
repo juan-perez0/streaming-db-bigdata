@@ -1,0 +1,33 @@
+﻿PAÍS			PROMEDIO	TÍTULOS	MIN	MAX
+-------------------------------------------------------
+Colombia		8.80		1	8.8	8.8
+Reino Unido		8.73		10	7.8	9.4
+India			8.37		6	8.3	8.8
+Estados Unidos		8.37		51	6.9	9.5
+Brasil			8.60		1	8.6	8.6
+Italia			8.05		2	7.5	8.6
+Japón			8.28		8	7.6	8.6
+Corea del Sur		8.17		10	7.0	8.5
+Francia			8.08		6	7.5	8.5
+Australia		8.10		1	8.1	8.1
+España			7.92		8	7.0	8.8
+México			7.80		5	7.5	8.1
+Alemania		7.95		5	6.8	8.8
+Israel			8.20		1	8.2	8.2
+Austria			6.80		1	6.8	6.8
+
+================================================
+RESUMEN - JOB 02: Promedio Puntuación por País
+================================================
+Total de países únicos: 15
+País mejor evaluado (min 5 títulos): India 8.37, Reino Unido 8.73
+Mayor volumen: Estados Unidos (51 títulos, prom. 8.37)
+
+INTERPRETACIÓN:
+Reino Unido destaca con 10 títulos y promedio 8.73, liderado por
+Chernobyl (9.4) y Sherlock (9.1). India con 6 títulos y promedio
+8.37, impulsado por Panchayat (8.8). Estados Unidos domina en
+volumen con 51 títulos con promedio comparable.
+
+Hadoop MapReduce Job completado en: 51 segundos
+Mapper tasks: 2 | Reducer tasks: 1
