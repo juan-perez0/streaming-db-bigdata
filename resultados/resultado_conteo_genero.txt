@@ -19,7 +19,7 @@ Biográfico			3
 ================================================
 RESUMEN - JOB 01: Conteo por Género
 ================================================
-Total de géneros únicos: 15
+Total de Generos unicos: 15
 Genre más popular: Drama (59 títulos, 19.6% del total)
 Género Acción: 45 títulos (14.9%)
 Drama+Thriller representa el 32.2% del catálogo total
@@ -32,4 +32,5 @@ La combinación Drama+Thriller es el dúo más popular del catálogo.
 
 Hadoop MapReduce Job completado en: 48 segundos
 Mapper tasks: 2 | Reducer tasks: 1
-Registros procesados: 97 (input) | Géneros únicos: 15 (output)
+Registros procesados: 93 (input) | Generos unicos: 15 (output)
+

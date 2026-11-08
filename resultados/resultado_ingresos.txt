@@ -32,3 +32,4 @@ confirmando que el cine de autor internacional supera al blockbuster
 en eficiencia financiera.
 
 Hadoop MapReduce Job completado en: 44 segundos
+

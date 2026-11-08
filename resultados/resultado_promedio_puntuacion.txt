@@ -31,3 +31,4 @@ volumen con 51 títulos con promedio comparable.
 
 Hadoop MapReduce Job completado en: 51 segundos
 Mapper tasks: 2 | Reducer tasks: 1
+

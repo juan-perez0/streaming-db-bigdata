@@ -1,10 +1,10 @@
-# 📂 Descripción de los Datos
+﻿# Descripción de los Datos
 
 ## Archivos disponibles
 
 ### `streaming_ampliado.csv`
 
-Dataset ampliado con información de películas y series de plataformas de streaming. Contiene **100 registros** con datos realistas de títulos reconocidos a nivel mundial.
+Dataset ampliado con información de películas y series de plataformas de streaming. Contiene **93 registros** con datos realistas de títulos reconocidos a nivel mundial.
 
 #### Columnas
 
@@ -44,3 +44,4 @@ Dataset ampliado con información de películas y series de plataformas de strea
 ---
 
 *Datos recopilados con fines académicos y de análisis.*
+

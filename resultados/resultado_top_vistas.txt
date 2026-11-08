@@ -27,3 +27,4 @@ Lupin-Francia) demuestra la globalización del consumo de streaming.
 
 Hadoop MapReduce Job completado en: 39 segundos
 Mapper tasks: 2 | Reducer tasks: 1 (forzado para Top N global)
+

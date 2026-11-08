@@ -34,7 +34,7 @@ RESUMEN - JOB 05: Tendencias de Producción por Año
 ================================================
 Rango de años cubierto: 1950 - 2023
 Año más productivo: 2019 (10 títulos: 6 películas + 4 series)
-Mejor puntuación promedio: 1994 (8.97) y 2011 (9.17)
+Mejor puntuacion promedio: 1994 (8.97) y 2011 (9.17)
 Año con más vistas acumuladas: 2019 (364.4M visualizaciones)
 Tendencia clara: Incremento sostenido de producción 2016-2021
 
@@ -44,7 +44,8 @@ significativamente mayor. El año 2019 es el más prolífico. Las
 series dominan progresivamente desde 2015. Las películas clásicas
 (1994: Shawshank, Forrest Gump, Pulp Fiction) mantienen las
 puntuaciones promedio más altas, sugiriendo que la calidad percibida
-histórica supera al contenido moderno en puntuación promedio.
+histórica supera al contenido moderno en puntuacion promedio.
 
 Hadoop MapReduce Job completado en: 53 segundos
 Mapper tasks: 2 | Reducer tasks: 1
+

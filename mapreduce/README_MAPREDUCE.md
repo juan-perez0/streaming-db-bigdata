@@ -1,8 +1,8 @@
-# 📊 Proyecto MapReduce — Análisis de Datos de Plataformas de Streaming
+﻿# Proyecto MapReduce - Análisis de Datos de Plataformas de Streaming
 
 Este proyecto contiene **5 programas MapReduce** desarrollados en Java para Apache Hadoop 3.x. Cada programa analiza un aspecto diferente de un dataset CSV con información de contenidos de plataformas de streaming.
 
-## 📁 Estructura del Dataset (CSV)
+## Estructura del Dataset (CSV)
 
 El archivo de entrada es un CSV con las siguientes columnas:
 
@@ -36,7 +36,7 @@ El archivo de entrada es un CSV con las siguientes columnas:
 
 ---
 
-## 📦 Compilación General
+## Compilación General
 
 Para compilar cualquiera de los programas:
 
@@ -53,7 +53,7 @@ jar cf ConteoGenero.jar ConteoGenero*.class
 
 ---
 
-## 1️⃣ Conteo por Género (`01_conteo_por_genero/ConteoGenero.java`)
+## 1. Conteo por Género (`01_conteo_por_genero/ConteoGenero.java`)
 
 ### Propósito
 Cuenta la cantidad total de contenidos asociados a cada género. Considera los tres campos de género (`genero_1`, `genero_2`, `genero_3`), omitiendo los que estén vacíos.
@@ -82,7 +82,7 @@ Terror    156
 
 ---
 
-## 2️⃣ Promedio de Puntuación por País (`02_promedio_puntuacion/PromedioPuntuacion.java`)
+## 2. Promedio de Puntuación por País (`02_promedio_puntuacion/PromedioPuntuacion.java`)
 
 ### Propósito
 Calcula la puntuación promedio de los contenidos agrupados por país de origen.
@@ -109,7 +109,7 @@ España            7.10
 
 ---
 
-## 3️⃣ Análisis de Ingresos por Director (`03_analisis_ingresos/AnalisisIngresos.java`)
+## 3. Análisis de Ingresos por Director (`03_analisis_ingresos/AnalisisIngresos.java`)
 
 ### Propósito
 Analiza los ingresos (recaudación) de cada director, calculando la recaudación total, el número de películas y la recaudación promedio.
@@ -135,7 +135,7 @@ Steven Spielberg     4100000000.00 | 12 | 341666666.67
 
 ---
 
-## 4️⃣ Top 10 Contenidos Más Vistos (`04_top_vistas/TopVistas.java`)
+## 4. Top 10 Contenidos Más Vistos (`04_top_vistas/TopVistas.java`)
 
 ### Propósito
 Determina los 10 contenidos con mayor número de vistas en todo el dataset.
@@ -163,7 +163,7 @@ The Witcher         95000000 vistas
 
 ---
 
-## 5️⃣ Tendencias por Año (`05_tendencias_anio/TendenciasAnio.java`)
+## 5. Tendencias por Año (`05_tendencias_anio/TendenciasAnio.java`)
 
 ### Propósito
 Analiza las tendencias de la industria del streaming a lo largo de los años, mostrando cuántos contenidos se lanzaron cada año y cuál fue su puntuación promedio.
@@ -192,7 +192,7 @@ hadoop jar TendenciasAnio.jar TendenciasAnio /entrada/dataset.csv /salida/tenden
 
 ---
 
-## 📋 Resumen de los Programas
+## Resumen de los Programas
 
 | # | Programa | Clave Map | Valor Map | Métrica Principal |
 |---|----------|-----------|-----------|-------------------|
@@ -204,10 +204,11 @@ hadoop jar TendenciasAnio.jar TendenciasAnio /entrada/dataset.csv /salida/tenden
 
 ---
 
-## ⚠️ Notas Importantes
+## Notas Importantes
 
 1. **Cabecera del CSV**: Todos los programas detectan y omiten automáticamente la línea de cabecera del archivo CSV.
 2. **Datos vacíos**: Los campos vacíos o con valores no numéricos se ignoran de manera segura sin interrumpir la ejecución.
 3. **Formato de separación**: Se asume que el CSV usa comas (`,`) como separador de campos.
 4. **Directorio de salida**: El directorio de salida de HDFS **no debe existir** previamente. Hadoop lo crea automáticamente.
 5. **Codificación**: Los archivos están preparados para trabajar con texto en formato UTF-8.
+
